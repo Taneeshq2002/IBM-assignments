@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo List App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My ToDo List</h1>
+
+    <form id="todo-form">
+      <input type="text" id="task" placeholder="Enter a task" required />
+      <input type="password" id="password" placeholder="Enter password" required minlength="4" />
+      <input type="hidden" id="edit-id" />
+      <button type="submit" class="submit-btn">Add Task</button>
+    </form>
+
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
