@@ -16,11 +16,9 @@ public class ItemService {
                 // Validate sales price and grade
                 validateItem(id, name, purchasePrice, salesPrice, grade);
 
-                // If no exceptions, create Item and add it to the Set
                 Item item = new Item(id, name, purchasePrice, salesPrice, grade);
                 itemSet.add(item);
             } catch (PriceException | EssentialCommodityException | GradeMismatchException e) {
-                // Catch all exceptions, no items will be added to the Set in case of failure
                 System.out.println("Item rejected: " + e.getMessage());
             }
         }

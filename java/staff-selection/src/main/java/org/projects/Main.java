@@ -28,12 +28,12 @@ public class Main {
         }
         // Sort by applicant name
         applicants.sort(Comparator.comparing(Applicant::getName));
-        System.out.println(applicants);
+//        System.out.println(applicants);
         System.out.printf("%-10s %-5s %-5s %-5s %-6s %-7s\n",
                 "Name", "Sub1", "Sub2", "Sub3", "Total", "Percent");
         for (Applicant a : applicants) {
             if (a.getPercentage() >= 70) {
-                System.out.println(a.toString());
+                System.out.println(a);
             }
         }
     }
@@ -43,6 +43,6 @@ public class Main {
         return m1+m2+m3;
     }
     public static int calculatePercentage(int total){
-        return (total/300)*100;
+        return (total*100)/300;
     }
 }

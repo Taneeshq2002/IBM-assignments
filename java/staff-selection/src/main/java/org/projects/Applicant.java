@@ -36,6 +36,6 @@ public class Applicant {
     @Override
     public String toString() {
         return String.format("%-10s %-5d %-5d %-5d %-6d %-5d%%",
-                name, subject1, subject2, subject3, total, percentage);
+                this.name, this.subject1, this.subject2, this.subject3, this.total, this.percentage);
     }
 }
